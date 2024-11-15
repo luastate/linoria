@@ -23,6 +23,10 @@ local Options = {};
 getgenv().Toggles = Toggles;
 getgenv().Options = Options;
 
+if Library ~= nil then
+    Library:Unload()
+end
+
 local Library = {
     Registry = {};
     RegistryMap = {};
